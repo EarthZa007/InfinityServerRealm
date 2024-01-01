@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Infinity Server</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #282c35;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeInAnimation 2s ease-in-out;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1, h2 {
+            font-size: 3em;
+            background: linear-gradient(45deg, rgb(128,0,128), rgb(75,0,130), rgb(0,0,255), rgb(0,255,0), rgb(255,255,0), rgb(255,127,0), rgb(255,0,0));
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            animation: rainbowAnimation 6s linear infinite;
+        }
+
+        p {
+            color: #444;
+            font-size: 1.2em;
+        }
+
+        .subscribe-button, .realms-button {
+            margin-top: 20px;
+            display: inline-block;
+            overflow: hidden;
+            border: none;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            border-radius: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .subscribe-button {
+            background-color: #FF0000;
+        }
+
+        .realms-button {
+            background-color: #3498db;
+        }
+
+        .subscribe-button:hover, .realms-button:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes rainbowAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To</h1>
+        <h2>Infinity Server</h2>
+        <p>This is the first Website of Infinity Server</p>
+        
+        <!-- Subscribe Button -->
+        <a href="https://youtube.com/@winnerisgod?si=QqPMWekQQZE7nRIb" class="subscribe-button" target="_blank">
+            Subscribe
+        </a>
+
+        <!-- Realms Button -->
+        <a href="https://realms.gg/3g5aeqKyrsE" class="realms-button" target="_blank">
+            Join Realms
+        </a>
+    </div>
+</body>
+</html>
